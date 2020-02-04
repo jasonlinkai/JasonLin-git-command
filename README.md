@@ -129,6 +129,10 @@ git fetch
 ```Shell
 git push -f
 ```
+刪除遠程倉庫分支。
+```Shell
+git push ${REMOTE_NAME} :${BRANCH_NAME}
+```
 - - -
 
 ### *add* ###
@@ -139,4 +143,28 @@ git add .
 將指定位置的`unstaged`檔案`staged`。
 ```Shell
 git add ${FILE_PATH_1} ${FILE_PATH_2}
+```
+
+- - -
+
+### *branch* ###
+查看本地分支。
+```Shell
+git branch
+```
+查看遠程分支。
+```Shell
+git branch -r
+```
+查看所有分支。
+```Shell
+git branch -a
+```
+刪除分支。
+```Shell
+git branch -d ${TARGET_BRANCH}
+```
+強制刪除分支。
+```Shell
+git branch -D ${TARGET_BRANCH}
 ```
