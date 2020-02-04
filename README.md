@@ -168,3 +168,19 @@ git branch -d ${TARGET_BRANCH}
 ```Shell
 git branch -D ${TARGET_BRANCH}
 ```
+
+- - -
+
+### *clone* ###
+下載倉庫到當前命令行指向的位址。
+```Shell
+git clone ${URL}
+```
+
+- - -
+
+### *pull* ###
+拉取遠程倉庫當前分支的最新內容，並同步至本地。
+```Shell
+git pull
+```
